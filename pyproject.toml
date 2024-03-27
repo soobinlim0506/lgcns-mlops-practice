@@ -1,0 +1,33 @@
+[project]
+name = "lgcns-mlops-practice"
+version = "0.1.0"
+description = "Default template for PDM package"
+authors = [
+    {name = "soobinlim0506", email = "135047087+soobinlim0506@users.noreply.github.com"},
+]
+dependencies = [
+    "pandas==2.1.4",
+    "dG>=0.0.1",
+    "matplotlib==3.8.3",
+    "pre-commit==3.6.2",
+    "isort==5.13.2",
+    "mypy==1.9.0",
+    "jupyter==1.0.0",
+]
+requires-python = "==3.9.*"
+readme = "README.md"
+license = {text = "MIT"}
+
+
+[tool.pdm]
+distribution = false
+
+[tool.pdm.dev-dependencies]
+dev = [
+    "matplotlib>=3.8.3",
+    "pre-commit==3.6.2",
+    "black>=24.2.0",
+    "isort>=5.13.2",
+    "mypy>=1.9.0",
+    "jupyter>=1.0.0",
+]
